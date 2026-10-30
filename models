@@ -1,0 +1,23 @@
+<?php
+
+class MahasiswaModel
+{
+    private array $data = [
+        'Ahmad Dahlan',
+        'Siti Nurhaliza',
+        'Budi Santoso',
+        'Dewi Lestari',
+        'Eko Prasetyo',
+        'Fitri Handayani'
+    ];
+
+    public function semua(): array
+    {
+        return $this->data;
+    }
+
+    public function cari(int $i): ?string
+    {
+        return $this->data[$i] ?? null;
+    }
+}
