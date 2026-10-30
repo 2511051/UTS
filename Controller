@@ -1,0 +1,13 @@
+<?php
+
+require_once __DIR__ . '/../models/MahasiswaModel.php';
+
+class MahasiswaController
+{
+    public function index(): void
+    {
+        $model = new MahasiswaModel();
+        $daftar = $model->semua();
+        include __DIR__ . '/../views/mahasiswa.php';
+    }
+}
