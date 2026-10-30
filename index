@@ -1,0 +1,11 @@
+<?php
+
+// Tampilkan semua error PHP agar tidak menjadi layar putih
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+require_once __DIR__ . '/controllers/MahasiswaController.php';
+
+$controller = new MahasiswaController();
+$controller->index();
